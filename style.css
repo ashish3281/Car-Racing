@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #34adff;
+    background-image: -webkit-linear-gradient(45deg,#7c7e80 50%,#323333 50%);
+    min-height: 800px;
+}
+#game{
+    height: 500px;
+    width: 390px;
+    border: 1px solid black;
+    margin: 1rem auto;
+    background-image: url(images.png);
+    background-size: contain;
+    overflow: hidden;
+}
+#bluecar{
+    height: 100px;
+    width: 130px;
+    background-color: blue;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: move 1s linear infinite;
+}
+#bluecar img{
+    height: 100px;
+
+}
+@keyframes move{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top:501px;
+    }
+}
+#redcar{
+    height: 100px;
+    width: 130px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+#redcar img{
+    height: 100px;
+}
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(231,105,105);
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+     display: none;
+}
+#start{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(231,105,105);
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    
+}
+#score{
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    color: seashell;
+}
+#text{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: seashell;
+}
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    color: cyan;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#link{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    color: cyan;
+    margin-top: 1rem;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
